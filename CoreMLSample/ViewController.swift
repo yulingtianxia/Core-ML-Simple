@@ -97,7 +97,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
                 self.predictLabel.text = classifications.joined(separator: "\n")
             }
         }
-        classificationRequest.imageCropAndScaleOption = VNImageCropAndScaleOptionCenterCrop
+        classificationRequest.imageCropAndScaleOption = VNImageCropAndScaleOption.CenterCrop
         
         self.requests = [classificationRequest]
     }
